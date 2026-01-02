@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return "About me page";
+    return view('pages.about');
 });
