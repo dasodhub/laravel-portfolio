@@ -7,20 +7,12 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </header>
+    @include('partials.header')
     <main>
         @yield('content')
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio</p>
-    </footer>
+    @include('partials.footer')
 
 </body>
 </html>
