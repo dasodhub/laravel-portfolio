@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function about() {
-        return view('pages.about');
+        $data = [
+            'name' => 'John Oshoke',
+            'skills' => ['Laravel', 'PHP', 'Git', 'JavaScript', 'HTML', 'CSS']
+        ];
+        return view('pages.about', $data);
     }
 
     public function home() {

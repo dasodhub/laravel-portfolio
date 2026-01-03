@@ -3,7 +3,11 @@
 
 @section('content')
 
-<h1>About Me</h1>
-<p>I am learning Laravel and building real projects.</p>
+<h1>About {{ $name }}</h1>
+<ul>
+    @foreach ($skills as $skill )
+        <li>{{ $skill }}</li>
+    @endforeach
+</ul>
 
 @endsection
